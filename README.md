@@ -10,7 +10,11 @@ This file contains Goals Above Replacement data for NHL history.
 | age          | Age as of Feb. 1                                     |
 | team_id      | H-R team ID                                          |
 | pos          | Player's position for season                         |
+| team_name    | Full team name                                       |
 | franch_id    | H-R franchise ID                                     |
+| stint_id     | Stint no. within season (may be incomplete)          |
+| lg_id        | League ID                                            |
+| maj_pos      | Major position (F, D or G)                           |
 | GP           | Games played                                         |
 | G            | Goals                                                |
 | A            | Assists                                              |
