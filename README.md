@@ -23,10 +23,11 @@ This file contains Goals Above Replacement data for NHL history.
 | plus_minus   | Plus/minus rating                                    |
 | PIM          | Penalty minutes                                      |
 | ATOI         | Average time on ice per game                         |
+| S%           | Shooting percentage                                  |
 | GP_G         | Games (goalies)                                      |
 | GA_G         | Goals against (goalies)                              |
 | SA_G         | Shots against (goalies)                              |
-| SV_pct       | Save percentage (goalies)                            |
+| SV%          | Save percentage (goalies)                            |
 | Offense      | Offensive Goals Above Replacement                    |
 | Defense      | Defensive Goals Above Replacement                    |
 | Goalie       | Goaltending Goals Above Replacement                  |
