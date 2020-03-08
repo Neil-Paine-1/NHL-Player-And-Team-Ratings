@@ -20,7 +20,7 @@ This file contains Goals Above Replacement data for NHL history.
 | A            | Assists                                              |
 | Pts          | Points                                               |
 | GCPG         | Goals Created per game                               |
-| plus_minus   | Plus/minus rating                                    |
+| +/-          | Plus/minus rating                                    |
 | PIM          | Penalty minutes                                      |
 | ATOI         | Average time on ice per game                         |
 | S%           | Shooting percentage                                  |
