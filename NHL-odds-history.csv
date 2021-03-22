@@ -1,4 +1,4 @@
-Team.Name,ESPN_ID,Team.Name_1,HR_franch,Division,Elo.Rating,Sims,Games,Wins,Losses,OT.SO.L,Points,Div..Rk,Win.Div..,Playoffs.,Ovr..Rk,Make.2nd.Rd,Make.3rd.Rd,Make.Finals,Win.Finals,Rem..SOS,Rank,datestamp
+Team Name,ESPN_ID,Team Name_1,HR_franch,Division,Elo Rating,Sims,Games,Wins,Losses,OT/SO L,Points,Div. Rk,Win Div.%,Playoffs%,Ovr. Rk,Make 2nd Rd,Make 3rd Rd,Make Finals,Win Finals,Rem. SOS,Rank,datestamp
 Lightning,tb,Tampa Bay Lightning,TBL,Central,1595,1000,56,36.2,19.8,5.6,77.9,1.59,64.6,98.1,3.81,69.6,47.6,31.4,18.8,1514,10,2021-02-16
 Bruins,bos,Boston Bruins,BOS,East,1573,1000,55,34.6,20.4,6.4,75.6,1.56,65.7,98.5,4.19,63.8,39.1,23.5,14.1,1494,23,2021-02-16
 Avalanche,col,Colorado Avalanche,COL,West,1554,1000,51,29.7,21.3,5.3,64.8,2.41,31.3,91.2,8.4,56.9,32.4,17.9,9.4,1486,29,2021-02-16
@@ -1053,3 +1053,34 @@ Ducks,ana,Anaheim Ducks,ANA,West,1421,2500,56,17.9,38.1,9,44.8,7.82,0,0.04,28.44
 Senators,ott,Ottawa Senators,OTT,North,1414,2500,56,18.9,37.1,5.9,43.7,6.97,0,0,28.75,0,0,0,0,1510,17,2021-03-21
 Sabres,buf,Buffalo Sabres,BUF,East,1413,2500,55,15.3,39.7,7.3,37.8,7.93,0,0,30.28,0,0,0,0,1543,2,2021-03-21
 Red Wings,det,Detroit Red Wings,DET,Central,1393,2500,56,18.1,37.9,7,43.2,7.89,0,0.08,28.95,0,0,0,0,1534,3,2021-03-21
+Lightning,tb,Tampa Bay Lightning,TBL,Central,1611,2500,56,39.1,16.9,4.6,82.9,1.17,84.68,100,1.76,77.68,52.8,38.68,24.72,1489,21,2021-03-22
+Golden Knights,vgs,Vegas Golden Knights,VEG,West,1569,2500,56,36.9,19.1,4,77.8,1.49,64.04,99.52,3.94,63.16,36.32,21.12,11.4,1491,18,2021-03-22
+Avalanche,col,Colorado Avalanche,COL,West,1566,2500,56,34.6,21.4,5,74.2,2.08,27.92,98.16,6.26,60.84,33.52,19.04,9.44,1491,19,2021-03-22
+Bruins,bos,Boston Bruins,BOS,East,1563,2500,54,31.6,22.4,6.8,69.9,2.57,26.04,92.4,7.63,51.64,28.92,15.52,7.8,1473,29,2021-03-22
+Islanders,nyi,New York Islanders,NYI,East,1554,2500,55,32.8,22.2,6.6,72.2,2.29,32.6,94.72,6.68,50.04,26.32,13.88,6.68,1499,10,2021-03-22
+Hurricanes,car,Carolina Hurricanes,CAR,Central,1547,2500,56,34.5,21.5,6,75,2.27,11.04,99.4,5.83,55.32,22.24,11.6,6.4,1492,16,2021-03-22
+Maple Leafs,tor,Toronto Maple Leafs,TOR,North,1536,2500,56,33.1,22.9,4.7,70.9,1.9,51.16,96.4,8.95,55.76,32.24,13.28,6.32,1494,14,2021-03-22
+Capitals,wsh,Washington Capitals,WSH,East,1541,2500,56,33.3,22.7,6.9,73.5,2.36,32.04,94,6.96,46.72,22.28,10.28,4.6,1508,9,2021-03-22
+Jets,wpg,Winnipeg Jets,WPG,North,1519,2500,56,31.2,24.8,4.9,67.3,2.83,19.6,87.36,12.28,44.48,21.4,8.24,3.2,1472,30,2021-03-22
+Panthers,fla,Florida Panthers,FLA,Central,1524,2500,56,32.7,23.3,6.9,72.3,2.7,4.24,98.08,7.98,40.52,15.44,7.4,3.12,1518,4,2021-03-22
+Penguins,pit,Pittsburgh Penguins,PIT,East,1528,2500,56,32.1,23.9,4.7,69,3.52,7.48,77.64,10.66,33.96,15.08,6.44,2.8,1485,24,2021-03-22
+Wild,min,Minnesota Wild,MIN,West,1523,2500,56,32.5,23.5,4.1,69.1,3.13,6.28,89.32,10.47,36.6,15,6.2,2.56,1474,28,2021-03-22
+Oilers,edm,Edmonton Oilers,EDM,North,1515,2500,56,32.2,23.8,2.6,66.9,2.9,15.96,87.12,12.47,43.6,20.72,7.52,2.2,1495,12,2021-03-22
+Canadiens,mtl,Montreal Canadiens,MTL,North,1508,2500,56,27.1,28.9,11.9,66,3.31,11.68,78.8,13.94,36.24,16.84,5.92,2.2,1464,31,2021-03-22
+Blues,stl,St. Louis Blues,STL,West,1518,2500,55,28,27,7.8,63.7,3.95,1.6,70.76,14.34,27.8,11.28,4.12,1.68,1513,7,2021-03-22
+Flyers,phi,Philadelphia Flyers,PHI,East,1523,2500,56,29.1,26.9,6.1,64.4,4.65,1.72,34.72,15.03,15.32,6.56,2.64,1.32,1492,17,2021-03-22
+Flames,cgy,Calgary Flames,CGY,North,1499,2500,56,27.2,28.8,5.8,60.3,4.78,1.32,33.4,18.87,13.4,5.92,2.16,1.04,1475,27,2021-03-22
+Stars,dal,Dallas Stars,DAL,Central,1516,2500,56,24.1,31.9,11.2,59.4,5.24,0.04,32.76,20.02,10.16,4.12,2.08,0.96,1515,5,2021-03-22
+Kings,la,Los Angeles Kings,LAK,West,1482,2500,55,25.3,29.7,9,59.6,5.06,0.16,30.16,18.43,8.12,2.88,1.04,0.48,1477,26,2021-03-22
+Blue Jackets,cbj,Columbus Blue Jackets,CBJ,Central,1493,2500,56,24.4,31.6,9.8,58.5,5.39,0,24.92,20.72,5.6,2.04,0.52,0.24,1509,8,2021-03-22
+Canucks,van,Vancouver Canucks,VAN,North,1491,2500,56,26.3,29.7,5.5,58.1,5.31,0.28,16.88,20.76,6.52,2.88,0.84,0.24,1480,25,2021-03-22
+Blackhawks,chi,Chicago Blackhawks,CHI,Central,1484,2500,56,25.6,30.4,7.9,59.1,5.22,0,33.68,20.17,7.88,2.36,0.52,0.24,1494,13,2021-03-22
+Rangers,nyr,New York Rangers,NYR,East,1500,2500,56,25.8,30.2,7.1,58.7,5.81,0.12,6.24,20.29,2.2,0.8,0.36,0.16,1496,11,2021-03-22
+Coyotes,ari,Arizona Coyotes,PHX,West,1474,2500,56,24.4,31.6,8,56.8,5.94,0,8.76,22,2.52,0.64,0.2,0.12,1493,15,2021-03-22
+Sharks,sj,San Jose Sharks,SJS,West,1458,2500,56,23.3,32.7,7.2,53.9,6.49,0,3.28,24.02,0.96,0.36,0.08,0.04,1490,20,2021-03-22
+Devils,nj,New Jersey Devils,NJD,East,1454,2500,56,21.9,34.1,7.3,51.1,6.85,0,0.28,25.67,0.12,0.04,0.04,0.04,1522,2,2021-03-22
+Predators,nsh,Nashville Predators,NSH,Central,1478,2500,56,25.6,30.4,3.8,55,6.11,0,11.04,23.06,2.84,1,0.28,0,1485,23,2021-03-22
+Ducks,ana,Anaheim Ducks,ANA,West,1420,2500,56,17.9,38.1,9,44.8,7.86,0,0.04,28.57,0,0,0,0,1514,6,2021-03-22
+Senators,ott,Ottawa Senators,OTT,North,1414,2500,56,18.9,37.1,5.8,43.6,6.97,0,0.04,28.9,0,0,0,0,1486,22,2021-03-22
+Sabres,buf,Buffalo Sabres,BUF,East,1414,2500,55,15.3,39.7,7.3,38,7.96,0,0,30.27,0,0,0,0,1520,3,2021-03-22
+Red Wings,det,Detroit Red Wings,DET,Central,1393,2500,56,18.1,37.9,7,43.1,7.91,0,0.12,29.07,0,0,0,0,1532,1,2021-03-22
