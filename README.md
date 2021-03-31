@@ -27,7 +27,9 @@ This file contains Goals Above Replacement (GAR) data for NHL history. GAR is my
 | +/-          | Plus/minus rating                                    |
 | PIM          | Penalty minutes                                      |
 | ATOI         | Average time on ice per game                         |
+| SPG          | Shots per game                                       |
 | S%           | Shooting percentage                                  |
+| Adj CFrel    | 5v5 relative Corsi, adjusted for zone starts & pos.  |
 | GP_G         | Games (goalies)                                      |
 | GA_G         | Goals against (goalies)                              |
 | SA_G         | Shots against (goalies)                              |
@@ -40,6 +42,10 @@ This file contains Goals Above Replacement (GAR) data for NHL history. GAR is my
 | Adj_Def      | Adjusted Defensive GAR                               |
 | Adj_Gltd     | Adjusted Goaltending GAR                             |
 | Adj_GAR      | Adjusted GAR (scaled to modern schedule/roster size) |
+| Prev Tm      | Previous franchise played for                        |
+| Arrived      | First season w/ current franchise                    |
+| Departed     | Final season w/ current franchise                    |
+| Next Tm      | Next franchise played for                            |
 
 # Historical Elo Data
 
