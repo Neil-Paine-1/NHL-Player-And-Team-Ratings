@@ -2,6 +2,10 @@
 
 https://pquinn1991.shinyapps.io/nhl-odds/
 
+...And this one by [@steodose](https://github.com/steodose/NHL-Odds):
+
+https://steodosescu.shinyapps.io/nhl-odds/
+
 # Historical GAR Data
 This file contains Goals Above Replacement (GAR) data for NHL history. GAR is my spin on Tom Awad’s Goals Versus Threshold (GVT) and Hockey-Reference.com’s Point Shares (PS), calculated by running a series of regressions and properly rescaling leaguewide value to better distribute between forwards, defensemen and goalies. (I assign forwards 60 percent of leaguewide value, while defensemen get 30 percent and goalies get 10 percent; the metric also creates more separation between league goaltending performances and balances total league offensive value against the value of defense plus goaltending.)
 
