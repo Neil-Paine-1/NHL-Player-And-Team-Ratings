@@ -55,4 +55,4 @@ This file contains Goals Above Replacement (GAR) data for NHL history. GAR is my
 
 # Historical Elo Data and Playoff Odds
 
-The Elo model and forecast has been revamped and will now be hosted at FiveThirtyEight.
+The Elo model and forecast has been revamped and will now be [hosted at FiveThirtyEight](https://projects.fivethirtyeight.com/2022-nhl-predictions/).
