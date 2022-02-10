@@ -1,58 +1,12 @@
-# Historical GAR Data
-This file contains Goals Above Replacement (GAR) data for NHL history. GAR is my spin on stats like Tom Awad’s Goals Versus Threshold (GVT) and Hockey-Reference.com’s Point Shares (PS), calculated using Goals Created on offense, Goals Saved Above Average for goalies and Relative On-Ice Goals Allowed on defense. The goal is to properly scale leaguewide value and better distribute between forwards, defensemen and goalies. (I assign forwards 60 percent of leaguewide value, while defensemen get 30 percent and goalies get 10 percent; the metric also creates more separation between league goaltending performances and balances total league offensive value against the value of defense plus goaltending.)
+# Historical NHL Data
+This repo contains my updating NHL player stats, including Position-Relative [Game Score](https://hockey-graphs.com/2016/07/13/measuring-single-game-productivity-an-introduction-to-game-score/) above average metrics -- see NHL-GameScore-WAR-data.csv -- and Modified [Point Shares](https://www.hockey-reference.com/about/point_shares.html) -- see modified-point-shares.csv.
 
-**Update (10/6/21):** The file ```NHL-GAR-data-v2.5-1956-2022.csv``` contains a new update to the GAR formula that does a better job of reconciling the sum of a team's GAR to its actual regular-season goal differential. In the past, GAR was somewhat decoupled from the player's team context and only concerned with balancing positions at a league-wide level. Now GAR has an element that ensures each team's offensive GAR is based on its goals per game (relative to league average) and its defensive GAR is based on the implied team defensive performance after extracting goaltending GAR (which itself is based on Save%). As a result, we should no longer see cases like the 2020-21 Philadelphia Flyers, who (while a bad team) had an artificially poor total GAR because the team was independently being penalized for horrible goaltending and low defensive GAR. Now the sum of those categories will correspond to a team's goals allowed relative to league average.
+Each metric has its own strengths and weaknesses:
 
+MPS is good for explaining "past-looking" value. It has Hockey-Reference's Point Shares as its base, but redistributes league value so that 60 percent goes to forwards, 30 percent to defensemen and 10 percent to goalies. It also further allocates value such that 40 percent goes to forwards' offense and 10 percent to defensemen's offense (adding up to 50 percent, offense being half the game), while 20 percent goes to forwards' defense, 20 percent to defensemen's defense and 10 percent to goalies (again, adding up to 50 percent on the defense/goaltending side of the game). That gives MPS an internal consistency while still maintaining the simplicity of adding up to roughly match a team's point total for the season. Over the 2009-2021 seasons, the game-weighted sum of players' MPS/GP has a 0.99 correlation with their team's goals-per-game differential, which is higher than the equivalent for Evolving Hockey's [Goals Above Replacement](https://evolving-hockey.com/glossary/goals-above-replacement/) (0.93), my Game Score-based WAR metric (0.89) or Position-Relative Game Score Above Average per game (0.82).
 
-
-|  Abbreviation  |                                           Key                                            |
-|----------------|------------------------------------------------------------------------------------------|
-| player_ID      | Hockey-Reference player ID tag.                                                          |
-| name_common    | Player's name.                                                                           |
-| year_ID        | Season.                                                                                  |
-| age            | Age on Jan 31 of the season.                                                             |
-| team_ID        | Team ID tag.                                                                             |
-| pos            | Position.                                                                                |
-| maj_pos        | Major position (i.e., F/D/G).                                                            |
-| gp             | Games played as skater.                                                                  |
-| g              | Goals.                                                                                   |
-| a              | Assists.                                                                                 |
-| pts            | Points.                                                                                  |
-| gc             | Goals Created.                                                                           |
-| plusminus      | Plus/Minus.                                                                              |
-| minus_vs_exp   | Minuses vs. expected (based on team/position average).                                   |
-| pim            | Penalty minutes.                                                                         |
-| s              | Shots on goal.                                                                           |
-| s_pct          | Shooting percentage.                                                                     |
-| toi            | Time on ice.                                                                             |
-| g_gp           | Goalie games played.                                                                     |
-| g_ga           | Goalie goals allowed.                                                                    |
-| g_sa           | Goalie shots against.                                                                    |
-| g_sv           | Goalie saves.                                                                            |
-| g_sv_pct       | Goalie save percentage.                                                                  |
-| g_min          | Goalie minutes played.                                                                   |
-| g_adj_ga_rt    | Goalie GA%- (adjusted rate of allowing goals, where 100 is average and lower is better). |
-| g_gsaa         | Goalie goals saved above average.                                                        |
-| g_lg_sv_pct    | Goalie league-average SV% in season.                                                     |
-| off_gar        | Offensive Goals Above Replacement.                                                       |
-| def_gar        | Defensive Goals Above Replacement.                                                       |
-| gltd_gar       | Goaltending Goals Above Replacement.                                                     |
-| tot_gar        | Total Goals Above Replacement.                                                           |
-| tm_sched       | Team schedule length.                                                                    |
-| roster_sz      | Active roster size (skaters) in season.                                                  |
-| adj_off        | Adjusted offensive GAR (accounts for sched/roster sz).                                   |
-| adj_def        | Adjusted defensive GAR (accounts for sched/roster sz).                                   |
-| adj_gltd       | Adjusted defensive GAR (accounts for sched).                                             |
-| adj_gar        | Adjusted Total GAR (accounts for sched/roster sz).                                       |
-| mpg            | Minutes per game.                                                                        |
-| tot_gmsc       | Total Game Score (as per Hockey-Graphs.com formula).                                     |
-| gmsc_pg        | Game Score per game.                                                                     |
-| gmsc_pg_vs_avg | Game Score per game vs. average at position.                                             |
-| gmsc_60        | Game Score per 60 minutes.                                                               |
-| gmsc_60_vs_avg | Game Score per 60 vs. average at position.                                               |
-
-
+However, MPS performs less well when predicting future team success or failure. The game-weighted sum of players' MPS/GP from the previous season has just a 0.52 correlation with team goal differential per game from the current season, which underscores the need for a metric that focuses more on evaluating persistent performance over time. My research has found that a better metric for this purpose is per-game Game Score -- a statistic originally developed by Dom Luszczyzyn (now of The Athletic) -- with an adjustment for the league's positional average each season. The game-weighted sum of players' Position-Relative Game Score Above Average from the previous season has a correlation of 0.57 with the team's current-season goal differential per-game, which is superior to not just MPS (0.52) but also Game Score WAR (0.55), old-school original Point Shares (0.51) and Evolving-Hockey GAR (0.49). To my mind, this makes Position-Relative Game Score Above Average a good forward-looking complement to a purer value metric like MPS, particularly considering Position-Relative Game Score Above Average contains extra data on 1st vs. 2nd assists, face-offs, shot-blocking, on-ice Corsi and more.
 
 # Historical Elo Data and Playoff Odds
 
-The Elo model and forecast has been revamped and will now be [hosted at FiveThirtyEight](https://projects.fivethirtyeight.com/2022-nhl-predictions/).
+This repo used to contain ratings and projections for each team. The Elo model and forecast has been revamped and will now be [hosted at FiveThirtyEight](https://projects.fivethirtyeight.com/2022-nhl-predictions/).
